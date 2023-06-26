@@ -1,46 +1,45 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: s;
+.app {
+  background-color: #ccdfe0;
+  padding: 30px;
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #011a21aa);
+button {
+  background-color: #9e61ff;
+  color: #1aa140;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #0a57b4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.task {
+  background-color: #c51f1f;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
-.card {
-  padding: 2em;
+.task.completed {
+  background-color: #56eb43;
 }
 
-.read-the-docs {
+.task .description {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.task .status {
+  font-size: 14px;
   color: #888;
-}
-
-.App-Header {
-  height: 1px;
 }
