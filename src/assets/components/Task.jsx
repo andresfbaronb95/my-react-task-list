@@ -6,25 +6,3 @@ export default function Task (props) {
 
 }
 
-import React, { useState } from 'react';
-
-function CheckboxExample() {
-  const [isChecked, setIsChecked] = useState(false);
-
-  const handleCheckboxChange = () => {
-    setIsChecked(!isChecked);
-  };
-
-  return (
-    <div>
-      <label>
-        <input
-          type="checkbox"
-          checked={isChecked}
-          onChange={handleCheckboxChange}
-        />
-        Marcar/Desmarcar
-      </label>
-    </div>
-  );
-}
