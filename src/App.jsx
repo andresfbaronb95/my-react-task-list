@@ -1,16 +1,22 @@
-import './App.css';
-import Header from './assets/components/Header';
-import TaskList from './assets/components/TaskList';
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Home from './Home';
+import SobreNosotros from './SobreNosotros';
+import Tareas from './Tareas';
+import Menu from './Menu';
 
 function App() {
-  let myList = ["Lavar la ropa", "Sacar la basura"];
   return (
-    <>
-      <Header />
-      <TaskList list={myList} />
-    </>
-  )
+    <Router>
+      <div>
+        <Menu />
+        <hr />
+        <Route exact path="/" component={Home} />
+        <Route path="/sobre-nosotros" component={SobreNosotros} />
+        <Route path="/tareas" component={Tareas} />
+      </div>
+    </Router>
+  );
 }
 
-export default App
- 
+export default App;
